@@ -4,3 +4,5 @@
 
 str = "Hello world"
 print(str)
+
+# vduzh: str встроенная функция - давай переменную переименуем в s
