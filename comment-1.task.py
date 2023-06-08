@@ -1,3 +1,3 @@
 # Добавьте однострочный комментарий и сделайте так, чтобы текст не был выведен на экран.
 
-print("Please Comment me :)")
+# Now u can start checking this task
