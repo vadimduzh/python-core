@@ -24,8 +24,8 @@ print(res)
 # первый способ
 c = 6
 square = c * c
-res = square
-print(res)
+
+print(square)
 
 # vduzh: Я тут зря про res написал: давай ее уберем и square только оставим
 
