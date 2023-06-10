@@ -4,4 +4,7 @@
 # Код ниже
 
 str = "HOLA MADRID!"
+for i in str:
+    if i == "A":
+        print(i)
 
