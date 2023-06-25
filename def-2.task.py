@@ -3,6 +3,12 @@
 # - все это возвращается пользователю
 
 # Вызвать функцию func1
-print("=== START ===")
+def func1(s1, s2):
+    s1 = s1.upper()
+    print(s1)
+    s2 = s2.lower()
+    print(s2)
 
+
+func1("Hi", "Hello")
 
