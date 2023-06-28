@@ -31,5 +31,6 @@ func3("John")
 def func4(a, b):
     res = a * b
     print(res)
+    return[res]
 
 func4(4, 5)
