@@ -8,6 +8,7 @@ car = {
   "year": 1964
 }
 
+# Error: неправильно сделано
 for i in car:
   print(i)
 
