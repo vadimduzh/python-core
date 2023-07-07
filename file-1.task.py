@@ -2,9 +2,14 @@
 
 # Открыть файл text.txt и затем закрыть его
 
+file = open("text.txt", "w")
+file.close()
 
 # Открыть файл text.txt в каталоге data и затем закрыть его
 
+# file = open("text.txt", "w")
+# file.write("Hello world")
+# file.close()
 
 # Создать файл text.txt в каталоге tmp.
 # - не забыть его закрыть после создания
