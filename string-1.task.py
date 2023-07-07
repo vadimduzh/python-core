@@ -28,11 +28,21 @@ print(s)
 
 # Дана строка s. Вывести на эран все ли буквы в ней в верхнем регистре
 s = "Hello World"
-s1 = s.upper()
+s1 = "hello world"
+if s1 == s:
+    print(True)
+else:
+    print(False)
+
 # Error: неправильно сделано.
 
 # Дана строка s. Вывести на эран все ли буквы в ней в нижнем регистре
 s = "hello world"
+s1 = "HELLO WORLD"
+if s1 == s:
+    print(True)
+else:
+    print(False)
 # Error: не сделано.
 
 # Дана строка s. Найти индекс символа W в строке s и вывести на экран
