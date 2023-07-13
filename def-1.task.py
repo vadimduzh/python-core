@@ -34,3 +34,11 @@ def func4(a, b):
     return[res]
 
 func4(4, 5)
+
+def sum_all(a, b, c):
+    return 
+
+sum_all(1, 2, 3)
+
+
+

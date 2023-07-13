@@ -5,6 +5,7 @@
 # - берем элемент, из него втаскивает значение по ключу firstName
 # - сколько элеиентов в списке res, столько и имен - этио вывести на экран
 print("= START =")
+res = 0
 lst = [
     {"firstName": "Maxim", "lastName": "Duzh"},
     {"firstName": "Maxim", "lastName": "Petrov"},
@@ -13,3 +14,7 @@ lst = [
     {"firstName": "Vadim", "lastName": "Ivanov"},
     {"firstName": "Pavel", "lastName": "Pavlov"},
 ]
+for i in lst:
+    if i == "firstname":
+        res = res + 1
+print(res)
