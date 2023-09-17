@@ -20,11 +20,11 @@
 file = open("data/olymp-001-in.txt", "r")
 
 s1 = file.readline()
-s1 = int(s1)
+num1 = int(s1)
 s2 = file.readline()
-s2 = int(s2)
+num2 = int(s2)
 
-res = s1 + s2
+res = num1 + num2
 s = str(res)
 
 file.close()
