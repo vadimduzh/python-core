@@ -16,10 +16,9 @@ def my_fn(a, b):
     c = a + b
     return c
 
+
 my_fn_result = my_fn(10, 20)
-
 print(my_fn_result)
-
 
 # Попросить пользователя ввести имя в терминале с помощью функции input.
 # Значение записать в переменную my_name_str
