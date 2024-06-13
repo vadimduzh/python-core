@@ -50,7 +50,6 @@ print(third_sum)
 def hello():
     num = 1
 
-
 hello_value = hello()
 print(hello_value)
 
