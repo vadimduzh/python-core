@@ -14,4 +14,7 @@ some_data = "Hello"
 # Распечатать значение переменной test_login.
 
 login = "test"
-login = test_login
+test_login = login
+
+print(login)
+print(test_login)
