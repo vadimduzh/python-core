@@ -4,18 +4,14 @@ my_sum = 10
 # Создать переменную my_bool и присвоить ей значение True
 # С помощью инструкции if проверить my_bool. Если оно истинно, ты вывести на экран строку Ok
 my_bool = True
-if my_bool  == True:
+if my_bool == True:
     print('Ok')
 
 
 # С помощью инструкции def создать функцию  hello без параметров, которая выводит наэкран строку Hello!
 # Затем ее вызвать.
-def hello ():
+def hello():
     print("Hello!")
 
+
 hello()
-
-
-
-
-
