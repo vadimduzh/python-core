@@ -37,6 +37,7 @@ print(sum_nums(50, 10), "BYN")
 # Значения вызова первой sum_nums присвоить third_sum
 # Распечатать third_sum
 # Т.е. должно вывести: 1000
+
 third_sum = sum_nums(sum_nums(100, 200), sum_nums(300, 400))
 print(third_sum)
 
@@ -50,7 +51,6 @@ print(third_sum)
 def hello():
     num = 1
 
+
 hello_value = hello()
 print(hello_value)
-
-
