@@ -27,6 +27,6 @@ my_add = add(100, 200)
 print(my_add)
 
 # Написать выражение, которое содержит вызов функции print с параметром Hello World!
- print("Hello world")
+print("Hello world")
 
 
