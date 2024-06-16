@@ -10,6 +10,6 @@ print(all_cars)
 # Распечатать my_phone_lst и убедиться, что вывелось ['IPhone', 'Samsung'].
 phone_lst = ['IPhone', 'Samsung']
 my_phone_lst = []
-
-my_phone_lst = phone_lst.copy()
+my_phone_lst.append(phone_lst)
 print(my_phone_lst)
+

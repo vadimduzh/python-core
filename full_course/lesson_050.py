@@ -8,12 +8,13 @@ german_cars = ['Audi', 'BMW', 'Opel', 'Mercedes', 'Audi', 'Audi']
 # Добавит в список телефон Xiaomi вторым элементом списка
 # Распечатать phone_lst и убедиться, что вывелось ['IPhone', 'Xiaomi',  'Samsung'].
 phone_lst = ['IPhone', 'Samsung']
-
+print(phone_lst.insert(1, "Xiaomi"))
 
 # Дан список num_lst.
 # Удалить все элементы списка.
 # Распечатать num_lst и убедиться, что вывелось [].
 num_lst = [10, 2, 17]
+print(num_lst.clear())
 
 # Даны два списка машин car_list and japanese_cars.
 # Добавить japanese_cars в список car_list
