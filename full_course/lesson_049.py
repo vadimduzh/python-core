@@ -11,5 +11,3 @@ print(all_cars)
 phone_lst = ['IPhone', 'Samsung']
 my_phone_lst = phone_lst.copy()
 print(my_phone_lst)
-
-
