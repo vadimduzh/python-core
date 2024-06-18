@@ -13,13 +13,13 @@ else:
 # соответствующее время года (зима, весна, лето, осень).
 # После выхода из if распечатать значение переменной season
 season = int(input("Enter the num of the month(from 1 to 12): "))
-if 0 < season < 4:
+if season == 1 or season == 12 or season == 2:
     print("This is Winter")
-elif 3 < season < 7:
+elif season == 3 or season == 4 or season == 5:
     print("This is Spring")
-elif 6 < season < 10:
+elif season == 6 or season == 7 or season == 8:
     print("This is Summer")
-elif 9 < season <= 12:
+elif season == 9 or season == 10 or season == 11:
     print("This is Fall")
 print(season)
 
