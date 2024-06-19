@@ -61,13 +61,16 @@ total = 0
 length = len(num_list_6)
 for i in num_list_6:
     total = total + i
-average_num = total//length
+average_num = total // length
 print(average_num)
 
 # Для заданного списка распечатать каждый элемент используя range и доступ по индексу.
 # Подсказка: Нужно сделать последовательность range для len(user_list_2), в ней будут
 # числа: 0, 1, ..., len(user_list_2) -1. И тогда ты идешь по индексам и вытаскиваешь элементы из user_list_2
 user_list_2 = ['john', 'andy', 'jane']
+length = len(user_list_2)
+for i in range(length):
+    print(user_list_2[i])
 
 # Для заданного списка price_list умножить каждый элемент на 2.
 # Подсказка: нужно идти по индексам (range), обращаться к элементу по индексу и присваивать ему
@@ -75,14 +78,18 @@ user_list_2 = ['john', 'andy', 'jane']
 # Потом распечатать весь список price_list через print
 # Потом распечатать в цикле каждый элемент списка price_list
 price_list = [10, 20, 30]
+length = len(price_list)
+for i in range(length):
+    price_list[i] = price_list[i] * 2
+    print(price_list[i])
+print(price_list)
 
 # Для заданного списка age_list каждое число меньше 18 заменить на 0.
 # Подсказка: нужно проверить текущее значение через if. Если условие выполняется, то элемент меняем на 0.
 # Потом распечатать весь список age_list через print
 age_list = [21, 10, 7, 30]
-for i in age_list:
-    if i < 18:
-        i == 0
+length = len(age_list)
+for i in range(length):
+    if age_list[i] < 18:
+        age_list[i] = 0
 print(age_list)
-
-
