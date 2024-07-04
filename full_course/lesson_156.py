@@ -49,7 +49,7 @@ min_value2 = max_value2 = num_list_5[0]
 for i in num_list_5:
     if i > max_value2:
         max_value2 = i
-    elif i < min_value2:
+    if i < min_value2:
         min_value2 = i
 print(max_value2, min_value2)
 
