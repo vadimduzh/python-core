@@ -172,15 +172,47 @@ price_list_6 = [10, 1, 20, 2, 30, 3, 50, 5]
 
 # Задача 1: Вывести на экран все элементы price_list_6, которые идут после 2-го.
 # Результат должен содержать числа: 20, 2, 30, 3, 50, 5
+price_list_6 = [10, 1, 20, 2, 30, 3, 50, 5]
 
+length = len(price_list_6)
+for i in range(2, length):
+    print(price_list_6[i])
 
 # Задача 2: Создать список price_list_6_res и в него сложить  все элементы, которые идут после 2-го в price_list_6.
 # Распечатать price_list_6_res. Результат должен быть [20, 2, 30, 3, 50, 5]
+price_list_6 = [10, 1, 20, 2, 30, 3, 50, 5]
+price_list_6_res = []
 
+length = len(price_list_6)
+for i in range(2, length):
+    price_list_6_res.append(price_list_6[i])
+
+print(price_list_6_res)
 
 # Задача 3: Сложить все price_list_6, которые идут после 2-го.
-# Распечатать результат. Результат должен содержать числа: 88
+# Распечатать результат. Результат должен содержать числа: 110
+price_list_6 = [10, 1, 20, 2, 30, 3, 50, 5]
 
+result = 0
+length = len(price_list_6)
+for i in range(2, length):
+    result = result + price_list_6[i]
+
+print(result)
 
 # Задача 4: Для списка price_list_6 найти минимальный и максимальный элемент среди тех , которые идут после 2-го.
-# Распечатать результат. Результат должен содержать числа: 3 и 50
+# Распечатать результат. Результат должен содержать числа: 2 и 50
+price_list_6 = [10, 1, 20, 2, 30, 3, 50, 5]
+min_value_6 = max_value_6 = price_list_6[2]
+length = len(price_list_6)
+for i in range(2, length):
+    if price_list_6[i] > max_value_6:
+        max_value_6 = price_list_6[i]
+    if price_list_6[i] < min_value_6:
+        min_value_6 = price_list_6[i]
+
+print(min_value_6, max_value_6)
+
+
+# print("START")
+# print("END")
