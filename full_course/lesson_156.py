@@ -235,9 +235,17 @@ counts = [10, 5, 5, 6, 11]
 test_letter = 'd'
 
 print("START")
-first_ind = test_letter.index = -1
-for i in letters:
-    if test_letter == i:
-        first_ind = letters.index(i)
-        print(first_ind)
+letter_ind = -1
+
+length = len(letters)
+for i in range(0, length):
+    if letters[i] == test_letter:
+        letter_ind = i
+
+print(letter_ind)
+
+if letter_ind == -1:
+    print("Буква не найдена")
+else:
+    print(counts[letter_ind])
 print("END")
