@@ -235,11 +235,9 @@ counts = [10, 5, 5, 6, 11]
 test_letter = 'd'
 
 print("START")
+first_ind = test_letter.index = -1
 for i in letters:
-    if i == test_letter:
-        a = letters.index(i)
-
-for i in counts:
-    if counts.index(i) == a:
-        print(i)
+    if test_letter == i:
+        first_ind = letters.index(i)
+        print(first_ind)
 print("END")
