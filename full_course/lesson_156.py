@@ -234,5 +234,12 @@ counts = [10, 5, 5, 6, 11]
 
 test_letter = 'd'
 
-# print("START")
-# print("END")
+print("START")
+for i in letters:
+    if i == test_letter:
+        a = letters.index(i)
+
+for i in counts:
+    if counts.index(i) == a:
+        print(i)
+print("END")
