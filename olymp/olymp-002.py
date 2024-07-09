@@ -2,7 +2,7 @@
 # Нужно сложить 2 первых числа и умножить на 3-е число.
 # Результат записать в файл tmp/olymp-002-out.txt
 
-file = open("data/olymp-002-in.txt", "r")
+file = open("../data/olymp-002-in.txt", "r")
 
 s1 = file.readline()
 num1 = int(s1)
@@ -18,7 +18,7 @@ s = str(res)
 
 file.close()
 
-file = open("tmp/olymp-002-out.txt", "w")
+file = open("../tmp/olymp-002-out.txt", "w")
 
 file.write(s)
 

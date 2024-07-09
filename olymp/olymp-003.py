@@ -6,7 +6,7 @@
 # - читаем каждую строку из файла (используем for - см. file-1.task.py в конце)
 # - переводим прочитанную строку в число и добавляем к результ
 
-file = open("data/olymp-003-in.txt", "r")
+file = open("../data/olymp-003-in.txt", "r")
 
 s1 = file.readline()
 num1 = int(s1)
@@ -22,7 +22,7 @@ res = str(result)
 
 file.close()
 
-file = open("tmp/olymp-003-out.txt", "w")
+file = open("../tmp/olymp-003-out.txt", "w")
 
 file.write(res)
 

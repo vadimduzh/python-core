@@ -1,7 +1,7 @@
 # В файле data/olymp-004-in.txt заданы числа.
 # Нужно перемножить все числа и результат записать в файл tmp/olymp-004-out.txt
 
-file = open("data/olymp-004-in.txt", "r")
+file = open("../data/olymp-004-in.txt", "r")
 
 s1 = file.readline()
 num1 = int(s1)
@@ -17,7 +17,7 @@ res = str(result)
 
 file.close()
 
-file = open("tmp/olymp-004-out.txt", "w")
+file = open("../tmp/olymp-004-out.txt", "w")
 
 file.write(res)
 
