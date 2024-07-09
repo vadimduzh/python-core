@@ -234,7 +234,6 @@ counts = [10, 5, 5, 6, 11]
 
 test_letter = 'd'
 
-print("START")
 letter_ind = -1
 
 length = len(letters)
@@ -248,19 +247,36 @@ if letter_ind == -1:
     print("Буква не найдена")
 else:
     print(counts[letter_ind])
-print("END")
 
 # Написать функцию get_letter_count, которая возвращает, сколько раз буква встречаются в некотором тексте.
 # Функция принимает 3 параметра: letter_lst, count_lst и test_letter и возвращает 0, если по букве нет информации
 # в тексте или число, сколько раз она встречается в тексте.
+print("START")
 
 
 # Реализовать функцию get_letter_count
 
+def get_letter_count(letter_lst, count_lst, letter):
+    found_index = None
+
+    for i in range(len(letter_lst)):
+        if letter_lst[i] == letter:
+            found_index = i
+
+    if found_index is None:
+        return 0
+    else:
+        num = count_lst[found_index]
+        return num
+
 
 # Вызвать функцию с параметрами ['a', 'b', 'c', 'd', 'e'], [10, 5, 5, 6, 11], 'd' и сохранить результат в переменной
 # count_res. Вывести count_res на экран и убедиться, что там 6.
-
+count_res = get_letter_count(['a', 'b', 'c', 'd', 'e'], [10, 5, 5, 6, 11], 'd')
+print(count_res)
 
 # Вызвать функцию с параметрами ['a', 'b', 'c', 'd', 'e'], [10, 5, 5, 6, 11], 'y' и сохранить результат в переменной
 # count_res. Вывести count_res на экран и убедиться, что там 0.
+count_res1 = get_letter_count(['a', 'b', 'c', 'd', 'e'], [10, 5, 5, 6, 11], 'y')
+print(count_res1)
+print("END")
