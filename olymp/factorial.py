@@ -7,15 +7,12 @@
 num = int(input("Enter the number >= 0: "))
 factorial = 1
 
-if num > 0:
+if num >= 0:
     # TODO: в питоне переменные большими буквами не обозначаются - просто сделай n
-    for N in range(1, num + 1):
-        factorial = factorial * N
+    for n in range(1, num + 1):
+        factorial = factorial * n
     print("N!:", factorial)
-else:
-    print("N!:", 1)
 
-# TODO: а зачем два раза печатать принт? ведь если сделать после if print("N!:", factorial) то он выведет то, что надо.
 
 # TODO: а давай выведем вместо N! строку, которая вместо N содержит введенное число
 
