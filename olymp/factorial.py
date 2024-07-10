@@ -8,7 +8,6 @@ num = int(input("Enter the number >= 0: "))
 factorial = 1
 
 if num >= 0:
-    # TODO: в питоне переменные большими буквами не обозначаются - просто сделай n
     for n in range(1, num + 1):
         factorial = factorial * n
     print("N!:", factorial)
