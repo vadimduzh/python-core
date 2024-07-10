@@ -10,7 +10,7 @@ factorial = 1
 if num >= 0:
     for n in range(1, num + 1):
         factorial = factorial * n
-    print("N!:", factorial)
+    print(num, "!:", factorial)
 
 
 # TODO: а давай выведем вместо N! строку, которая вместо N содержит введенное число
