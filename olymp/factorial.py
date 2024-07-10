@@ -5,11 +5,11 @@
 #
 # Подсказка: можно использовать цикл for и диапазон range.
 num = int(input("Enter the number >= 0: "))
-count = 1
+factorial = 1
 
 if num > 0:
     for N in range(1, num + 1):
-        count = count * N
-    print(count)
+        factorial = factorial * N
+    print("N!:", factorial)
 else:
-    print(1)
+    print("N!:", 1)
