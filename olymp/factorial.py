@@ -4,4 +4,12 @@
 # Факториал числа N = 5 считается как  5 * 4 * 3 * 2 * 1 и равен 120.
 #
 # Подсказка: можно использовать цикл for и диапазон range.
-#
+num = int(input("Enter the number >= 0: "))
+count = 1
+if num > 0:
+    for N in range(1, num + 1):
+        count = count * N
+    print(count)
+else:
+    print(1)
+
