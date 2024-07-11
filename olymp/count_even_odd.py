@@ -3,10 +3,13 @@
 
 # Сначала ввести строку и сохранить ее переменную numbers_str.
 numbers_str = input("Enter the list of numbers: ")
+
 # Затем разобрать строку numbers_str (использовать метод split) и сохранить результат в списке str_num_lst.
 str_num_lst = numbers_str.split()
+
 # Распечатать str_num_lst.
 print(str_num_lst)
+
 # Заводим 2 счетчика odd_count и even_count.
 # Затем проходим по каждому элементу списка str_num_lst, где лежат числа как строки.
 # И каждый элемент списка переводим в целое число int_value.
