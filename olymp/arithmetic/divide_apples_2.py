@@ -3,12 +3,9 @@
 #
 # Входные данные
 # Программа получает на вход числа n и k.
-n = int(input("Enter the total of children: "))
-k = int(input("Enter the total of apples: "))
 
 # Выходные данные
 # Программа должна вывести искомое количество яблок.
-print(n % k)
 
 # Примеры
 # входные данные
@@ -16,3 +13,9 @@ print(n % k)
 # 14
 # выходные данные
 # 2
+
+n = int(input("Enter the total of children: "))
+k = int(input("Enter the total of apples: "))
+
+print(n % k)
+
