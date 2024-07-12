@@ -1,3 +1,5 @@
+import math
+
 # Дано два числа a и b. Найдите гипотенузу треугольника с заданными катетами.
 
 # Входные данные
@@ -13,4 +15,8 @@
 # выходные данные
 # 5.0
 
+a = int(input("Enter a : "))
+b = int(input("Enter b: "))
 
+hypotenuse_sqr = ((a * a) + (b * b))
+print(math.sqrt(hypotenuse_sqr))
