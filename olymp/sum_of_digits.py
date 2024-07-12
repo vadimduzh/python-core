@@ -5,4 +5,11 @@
 #
 # Вывести на экран результат. Убедиться для введенного значения 4150 результатом будет 10.
 
+n = input("Enter the num: ")
+total = 0
 
+for i in n:
+    int_num = int(i)
+    total = total + int_num
+
+print(total)
