@@ -2,12 +2,6 @@
 #
 # Входные данные
 # Вводится натуральное число.
-num = input("Enter the natural num: ")
-for i in num:
-    int_num = int(i)
-    print()
-
-
 
 # Выходные данные
 # Выведите ответ на задачу.
@@ -18,3 +12,5 @@ for i in num:
 # выходные данные
 # 9
 
+num = input("Enter the natural num: ")
+print(num[-1])
