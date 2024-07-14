@@ -37,7 +37,8 @@ t = int(input("Enter t: "))
 s = v * t
 
 if s >= 0:
-    res = s % 109
+    reminder_value = s % 109
+    res = 0 + reminder_value
 else:
     reminder_value = (s * -1) % 109
     res = 109 - reminder_value
