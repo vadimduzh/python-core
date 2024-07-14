@@ -32,14 +32,15 @@
 # 108
 
 v = int(input("Enter v: "))
-
-if v < 0:
-    v = v * -1
-
 t = int(input("Enter t: "))
+
 s = v * t
 
-if s > 109:
-    print(s - 109)
+if s >= 0:
+    res = s % 109
 else:
-    print(109 - s)
+    reminder_value = (s * -1) % 109
+    res = 109 - reminder_value
+
+print(res)
+
