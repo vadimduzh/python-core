@@ -37,7 +37,6 @@ if v < 0:
     v = v * -1
 
 t = int(input("Enter t: "))
-
 s = v * t
 
 if s > 109:
