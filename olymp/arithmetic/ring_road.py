@@ -30,3 +30,16 @@
 # 1
 # выходные данные
 # 108
+
+v = int(input("Enter v: "))
+
+if v < 0:
+    v = v * -1
+
+t = int(input("Enter t: "))
+s = v * t
+
+if s > 109:
+    print(s - 109)
+else:
+    print(109 - s)
