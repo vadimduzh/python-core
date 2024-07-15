@@ -16,3 +16,6 @@
 # 3
 # выходные данные
 # 5
+n = int(input("Enter the num: "))
+
+print((n + 1) + (n % 2))
