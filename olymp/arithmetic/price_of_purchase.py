@@ -21,3 +21,15 @@
 # 4
 # выходные данные
 # 10 0
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+n = int(input("Enter n: "))
+
+total_price = (a * 100 + b) * n
+
+total_rub = total_price // 100
+total_coins = total_price % 100
+
+print(total_rub, total_coins)
+
+
