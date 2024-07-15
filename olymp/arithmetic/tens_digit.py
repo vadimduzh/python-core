@@ -13,6 +13,6 @@
 # 4
 
 # Пишем код здесь ...
-
 str_num = input("Enter the num: ")
+
 print(str_num[-2])
