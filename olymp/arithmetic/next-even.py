@@ -17,4 +17,5 @@
 # выходные данные
 # 10
 n = int(input("Enter the num: "))
+
 print((n + 2) - (n % 2))
