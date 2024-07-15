@@ -16,3 +16,12 @@
 # 5
 # выходные данные
 # 5 8
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+c = 0
+
+c = a
+a = b
+b = c
+
+print(a, b)
