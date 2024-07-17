@@ -19,3 +19,10 @@
 # 1441
 # выходные данные
 # 0 1
+n = int(input("Enter n: "))
+
+hours = n // 60
+minutes = n % 60
+res = hours % 24
+
+print(res, minutes)
