@@ -21,3 +21,24 @@
 # 129700
 # выходные данные
 # 12:01:40
+n = int(input("Enter n: "))
+res_hr = 0
+res_min = 0
+res_sec = 0
+
+res_hr = (n // 3600) % 24
+
+rem_sec = n % 3600
+res_min = rem_sec // 60
+res_sec = rem_sec % 60
+print(res_sec)
+
+str_1 = str(res_min)
+if res_min < 10:
+    str_1 = "0" + str_1
+
+str_2 = str(res_sec)
+if rem_sec < 10:
+    str_2 = "0" + str_2
+
+print(res_hr, ":", str_1, ":", str_2)
