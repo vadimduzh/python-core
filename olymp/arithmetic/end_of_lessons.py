@@ -20,14 +20,8 @@
 # выходные данные
 # 10 35
 n = int(input("Enter the number of lesson: "))
-school_break = n - 1
 hours = 9
 minutes = 0
-
-if n % 2 == 0:
-    minutes = minutes - 15
-else:
-    minutes = minutes - 5
 
 for i in range(1, n + 1):
     if i % 2 == 0:
@@ -35,13 +29,13 @@ for i in range(1, n + 1):
     else:
         minutes = minutes + 50
 
+if n % 2 == 0:
+    minutes = minutes - 15
+else:
+    minutes = minutes - 5
+
 hours = hours + minutes // 60
 minutes = minutes % 60
 
-if hours > 12:
-    res = hours % 12
-
-    print(res, minutes)
-else:
-    print(hours, minutes)
+print(hours, minutes)
 
