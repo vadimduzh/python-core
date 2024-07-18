@@ -23,10 +23,13 @@
 # 3
 n = int(input("Enter n: "))
 m = int(input("Enter m: "))
-days = 0
+days = m // n
+
 if m % n == 0:
     days = m // n
 else:
     days = m // n + 1
 
 print(days)
+
+# print((days + 1) - ((m / n) % 2))
