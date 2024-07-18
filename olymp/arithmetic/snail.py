@@ -25,3 +25,8 @@
 # 3
 # выходные данные
 # 5
+h = int(input("Enter h: "))
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+
+days = a - b

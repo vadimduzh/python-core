@@ -30,3 +30,18 @@
 # 20
 # выходные данные
 # 50
+hour_1 = int(input("Enter hour_1: "))
+minutes_1 = int(input("Enter minutes_1: "))
+seconds_1 = int(input("Enter seconds_1: "))
+hour_2 = int(input("Enter hour_2: "))
+minutes_2 = int(input("Enter minutes_2: "))
+seconds_2 = int(input("Enter seconds_2: "))
+
+total_1 = 0
+total_2 = 0
+
+total_1 = total_1 + hour_1 * 3600 + minutes_1 * 60 + seconds_1
+total_2 = total_2 + hour_2 * 3600 + minutes_2 * 60 + seconds_2
+res = total_2 - total_1
+
+print(res)
