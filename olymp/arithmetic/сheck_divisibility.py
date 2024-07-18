@@ -22,3 +22,10 @@
 # 2
 # выходные данные
 # 1
+n = int(input("Enter n: "))
+m = int(input("Enter m: "))
+total = 0
+
+total = total + int((m % n) > 0) + int((m % n) == 0)
+
+print(total)
