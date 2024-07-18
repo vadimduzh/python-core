@@ -21,3 +21,12 @@
 # 2100
 # выходные данные
 # 3
+n = int(input("Enter n: "))
+m = int(input("Enter m: "))
+days = 0
+if m % n == 0:
+    days = m // n
+else:
+    days = m // n + 1
+
+print(days)
