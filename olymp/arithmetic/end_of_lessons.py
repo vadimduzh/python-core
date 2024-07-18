@@ -19,4 +19,23 @@
 # 2
 # выходные данные
 # 10 35
-start_of_lessons =
+n = int(input("Enter the number of lesson: "))
+hours = 9
+minutes = 0
+
+for i in range(1, n + 1):
+    if i % 2 == 0:
+        minutes = minutes + 60
+    else:
+        minutes = minutes + 50
+
+if n % 2 == 0:
+    minutes = minutes - 15
+else:
+    minutes = minutes - 5
+
+hours = hours + minutes // 60
+minutes = minutes % 60
+
+print(hours, minutes)
+
