@@ -23,4 +23,9 @@
 # 28
 # выходные данные
 # 0
+n = int(input("Enter n: "))
+k = int(input("Enter k: "))
+res = 0
+res = res + (n - int(k % n > 0) * (k % n))
+print(res)
 
