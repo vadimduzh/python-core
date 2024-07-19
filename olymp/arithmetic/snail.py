@@ -29,4 +29,14 @@ h = int(input("Enter h: "))
 a = int(input("Enter a: "))
 b = int(input("Enter b: "))
 
-days = a - b
+days = 0
+rem = h
+while True:
+    if rem <= a:
+        days = days + 1
+        break
+
+    rem = rem - (a - b)
+    days = days + 1
+
+print(days)
