@@ -25,7 +25,16 @@
 # 0
 n = int(input("Enter n: "))
 k = int(input("Enter k: "))
-res = 0
-res = res + (n - int(k % n > 0) * (k % n))
+
+# без if
+# res = n - int(k % n > 0) * (k % n) - int(k % n == 0) * n
+
+# с if
+if k % n > 0:
+    res = n - k % n
+else:
+    # все получили поровну
+    res = 0
+
 print(res)
 
