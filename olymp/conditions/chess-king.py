@@ -24,13 +24,11 @@ y_1 = int(input("Enter second coordinate: "))
 x_2 = int(input("Enter third coordinate: "))
 y_2 = int(input("Enter fourth coordinate: "))
 
-if x_1 == x_2:
-    if y_1 + 1 == y_2 or y_1 - 1 == y_2:
-        print("YES")
+if (x_1 == x_2) and (y_1 + 1 == y_2 or y_1 - 1 == y_2):
+    print("YES")
 
-if y_1 == y_2:
-    if x_1 + 1 == x_2 or x_1 - 1 == x_2:
-        print("YES")
+elif (y_1 == y_2) and (x_1 + 1 == x_2 or x_1 - 1 == x_2):
+    print("YES")
 
 else:
     print("NO")
