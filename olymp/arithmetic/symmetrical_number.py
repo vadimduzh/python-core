@@ -21,3 +21,36 @@
 # 2008
 # выходные данные
 # 37
+num_1 = int(input("Enter num: "))
+
+if 1000 <= num_1 <= 10000:
+    str_nums = str(num_1)
+    list_of_nums = list(str_nums)
+
+    if list_of_nums[0] == list_of_nums[-1] and list_of_nums[1] == list_of_nums[-2]:
+        print(1)
+    else:
+        print(-1)
+
+if 1000 > num_1 >= 100:
+    print(-1)
+
+if num_1 < 100 >= 10:
+    str_nums = str(num_1)
+    list_of_nums = list(str_nums)
+    list_of_nums.insert(0, "0")
+    list_of_nums.insert(3, "0")
+
+    if list_of_nums[0] == list_of_nums[-1] and list_of_nums[1] == list_of_nums[-2]:
+        print(1)
+    else:
+        print(-1)
+
+if num_1 < 9 > 0:
+    print(-1)
+
+
+
+
+
+
