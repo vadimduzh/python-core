@@ -24,3 +24,18 @@
 # 3
 # выходные данные
 # NO
+x_1 = int(input("Enter first coordinate: "))
+y_1 = int(input("Enter second coordinate: "))
+x_2 = int(input("Enter third coordinate: "))
+y_2 = int(input("Enter fourth coordinate: "))
+
+if x_2 - x_1 == 4 or x_2 - x_1 == -4:
+    if y_2 - y_1 == 2 or y_2 - y_1 == -2:
+        print("YES")
+
+elif y_2 - y_1 == 4 or y_2 - y_1 == -4:
+    if x_2 - x_1 == 2 or x_2 - x_1 == -2:
+        print("YES")
+
+else:
+    print("NO")
