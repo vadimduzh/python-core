@@ -25,3 +25,12 @@
 # 1
 # выходные данные
 # YES
+x_1 = int(input("Enter first coordinate: "))
+y_1 = int(input("Enter second coordinate: "))
+x_2 = int(input("Enter third coordinate: "))
+y_2 = int(input("Enter fourth coordinate: "))
+
+if x_2 <= 8 and y_2 == y_1 or y_2 <= 8 and x_2 == x_1:
+    print("YES")
+else:
+    print("NO")
