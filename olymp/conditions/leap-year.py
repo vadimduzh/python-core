@@ -18,3 +18,9 @@
 # 2000
 # выходные данные
 # YES
+year = int(input("Enter the year: "))
+
+if year % 4 == 0:
+    print("YES")
+else:
+    print("NO")
