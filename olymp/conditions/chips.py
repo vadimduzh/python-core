@@ -19,3 +19,9 @@
 # 13
 # выходные данные
 # NO
+k = int(input("Enter k: "))
+
+if k % 4 == 0:
+    print("YES")
+else:
+    print("NO")
