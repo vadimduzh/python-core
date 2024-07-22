@@ -21,7 +21,7 @@
 # NO
 k = int(input("Enter k: "))
 
-if k % 4 == 0:
+if (k + 4) % 4 == 0:
     print("YES")
 else:
     print("NO")
