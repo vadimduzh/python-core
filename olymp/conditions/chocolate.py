@@ -22,3 +22,15 @@
 # 1
 # выходные данные
 # NO
+m = int(input("Enter m: "))
+n = int(input("Enter n: "))
+k = int(input("Enter k: "))
+
+if n or m != 1 and k % 2 == 0:
+    print("YES")
+
+elif n or m == 1:
+    print("YES")
+
+else:
+    print("NO")
