@@ -29,12 +29,7 @@ y_1 = int(input("Enter second coordinate: "))
 x_2 = int(input("Enter third coordinate: "))
 y_2 = int(input("Enter fourth coordinate: "))
 
-if x_1 == y_1 and x_2 == y_2:
+if (x_1 == x_2) or (y_1 == y_2) or (abs(x_2 - x_1) == abs(y_2 - y_1)):
     print("YES")
-
-elif x_2 <= 8 and y_2 == y_1 or y_2 <= 8 and x_2 == x_1:
-    print("YES")
-
 else:
     print("NO")
-
