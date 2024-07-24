@@ -23,3 +23,15 @@
 # 18
 # выходные данные
 # 0 1
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+c = int(input("Enter c: "))
+d = int(input("Enter d: "))
+
+sum_1 = b + a * 100
+sum_2 = d + c * 100
+
+bun = (sum_2 - sum_1) // 100
+coins = (sum_2 - sum_1) % 100
+
+print(bun, coins)
