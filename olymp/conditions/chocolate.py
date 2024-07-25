@@ -26,11 +26,9 @@ m = int(input("Enter m: "))
 n = int(input("Enter n: "))
 k = int(input("Enter k: "))
 
-if n or m != 1 and k % 2 == 0:
-    print("YES")
-
-elif n or m == 1:
+if k % m == 0 or k % n == 0:
     print("YES")
 
 else:
     print("NO")
+
