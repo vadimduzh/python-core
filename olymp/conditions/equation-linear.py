@@ -23,7 +23,7 @@
 a = int(input("Enter a: "))
 b = int(input("Enter b: "))
 
-if a == 0:
+if a == 0 and b != 0:
     print("NO")
 
 elif a == 0 and b == 0:
