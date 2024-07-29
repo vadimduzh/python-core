@@ -22,7 +22,14 @@ a = int(input("Enter a: "))
 b = int(input("Enter b: "))
 c = int(input("Enter c: "))
 
-if (a + b > c) or (a + c > b) or (b + c > a):
+if a + b > c:
     print("YES")
+
+elif a + c > b:
+    print("YES")
+
+elif b + c > a:
+    print("YES")
+
 else:
     print("NO")
