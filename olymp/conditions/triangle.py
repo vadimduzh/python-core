@@ -18,3 +18,11 @@
 # 5
 # выходные данные
 # YES
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+c = int(input("Enter c: "))
+
+if (a + b > c) or (a + c > b) or (b + c > a):
+    print("YES")
+else:
+    print("NO")
