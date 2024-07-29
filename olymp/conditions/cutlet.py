@@ -20,9 +20,10 @@ k = int(input("Enter k: "))
 m = int(input("Enter m: "))
 n = int(input("Enter n: "))
 
-time = 0
-plate = (n // k) + (n % k)
-time = plate * m * 2
+plate = n // k
+if n % k > 1:
+    plate += 1
 
+time = plate * m * 2
 print(time)
 
