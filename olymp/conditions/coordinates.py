@@ -18,3 +18,22 @@
 # 1
 # выходные данные
 # YES
+x_1 = int(input("Enter x_1: "))
+y_1 = int(input("Enter y_1: "))
+x_2 = int(input("Enter x_2: "))
+y_2 = int(input("Enter y_2: "))
+
+if x_1 > 0 and y_1 > 0 and x_2 > 0 and y_2 > 0:
+    print("YES")
+
+elif (x_1 > 0 and x_2 > 0) and (y_2 < 0 and y_2 < 0):
+    print("YES")
+
+elif (x_1 < 0 and x_2 < 0) and (y_2 > 0 and y_2 > 0):
+    print("YES")
+
+elif x_1 < 0 and y_1 < 0 and x_2 < 0 and y_2 < 0:
+    print("YES")
+
+else:
+    print("NO")
