@@ -26,10 +26,10 @@ y_2 = int(input("Enter y_2: "))
 if x_1 > 0 and y_1 > 0 and x_2 > 0 and y_2 > 0:
     print("YES")
 
-elif (x_1 > 0 and x_2 > 0) and (y_2 < 0 and y_2 < 0):
+elif (x_1 > 0 and x_2 > 0) and (y_1 < 0 and y_2 < 0):
     print("YES")
 
-elif (x_1 < 0 and x_2 < 0) and (y_2 > 0 and y_2 > 0):
+elif (x_1 < 0 and x_2 < 0) and (y_1 > 0 and y_2 > 0):
     print("YES")
 
 elif x_1 < 0 and y_1 < 0 and x_2 < 0 and y_2 < 0:
