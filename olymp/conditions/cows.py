@@ -26,7 +26,7 @@ elif 4 < n < 21:
 elif (n != 11) and (n % 10 == 1):
     print(n, "корова")
 
-elif (n > 21) and (n % 10 == 2 or n % 10 == 4 or n % 10 == 3):
+elif (n > 21) and ((n % 10 == 2) or (n % 10 == 4 )or (n % 10 == 3)):
     print(n, "коровы")
 
 else:
