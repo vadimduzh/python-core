@@ -19,3 +19,27 @@
 # 1
 # выходные данные
 # 1 0 0 0 0
+n = int(input("Enter n: "))
+
+ticket_60_count = ticket_20_count = ticket_10_count = ticket_5_count = ticket_1_count = 0
+
+ticket_60_count = n // 60
+trips = n % 60
+
+ticket_20_count = trips // 20
+trips = trips % 20
+
+ticket_10_count = trips // 10
+trips = trips % 10
+
+ticket_5_count = trips // 5
+trips = trips % 5
+
+if trips > 0:
+    if trips * 15 > 70:
+        ticket_5_count += 1
+    else:
+        ticket_1_count = trips
+
+print(ticket_1_count, ticket_5_count, ticket_10_count, ticket_20_count, ticket_60_count)
+

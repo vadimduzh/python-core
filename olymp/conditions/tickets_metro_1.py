@@ -1,4 +1,5 @@
-# Задача №304. Билеты на метро
+# Задача №304. Б
+# илеты на метро
 
 # Билет на одну поездку в метро стоит 15 рублей, билет на 10 поездок стоит 125 рублей, билет на 60 поездок стоит 440
 # рублей. Пассажир планирует совершить n поездок.
@@ -17,20 +18,22 @@
 # 129
 # выходные данные
 # 0 1 2
+
+# total trips
 n = int(input("Enter n: "))
 
-count_60 = count_10 = count_1 = 0
+ticket_60_count = ticket_10_count = ticket_1_count = 0
 
-count_60 = n // 60
-rem_60 = n % 60
+ticket_60_count = n // 60
+trips = n % 60
 
-count_10 = rem_60 // 10
-rem_10 = rem_60 % 10
+ticket_10_count = trips // 10
+trips = trips % 10
 
-if rem_10 > 0:
-    if n * 15 > 125:
-        count_10 += 1
+if trips > 0:
+    if trips * 15 > 125:
+        ticket_10_count += 1
     else:
-        count_1 = n * 15
+        ticket_1_count = trips
 
-print(count_1, count_10, count_60)
+print(ticket_1_count, ticket_10_count, ticket_60_count)
