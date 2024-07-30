@@ -17,17 +17,18 @@
 # 1 korova
 n = int(input("Enter n: "))
 
-if n % 10 == 1:
-    print(n, "корова")
-
-elif n == 2 or n == 4:
+if n in [2, 3, 4]:
     print(n, "коровы")
 
 elif 4 < n < 21:
     print(n, "коров")
 
-elif (n > 21) and (n % 10 == 2 or n % 10 == 4):
+elif (n != 11) and (n % 10 == 1):
+    print(n, "корова")
+
+elif (n > 21) and (n % 10 == 2 or n % 10 == 4 or n % 10 == 3):
     print(n, "коровы")
 
 else:
     print(n, "коров")
+
