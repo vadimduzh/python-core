@@ -16,3 +16,8 @@
 # 0
 # выходные данные
 # 0
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+c = int(input("Enter c: "))
+
+if c < b < 0:
