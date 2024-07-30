@@ -17,3 +17,20 @@
 # 129
 # выходные данные
 # 0 1 2
+n = int(input("Enter n: "))
+
+count_60 = count_10 = count_1 = 0
+
+count_60 = n // 60
+rem_60 = n % 60
+
+count_10 = rem_60 // 10
+rem_10 = rem_60 % 10
+
+if rem_10 > 0:
+    if n * 15 > 125:
+        count_10 += 1
+    else:
+        count_1 = n * 15
+
+print(count_1, count_10, count_60)
