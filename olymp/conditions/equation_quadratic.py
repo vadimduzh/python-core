@@ -20,4 +20,15 @@ a = int(input("Enter a: "))
 b = int(input("Enter b: "))
 c = int(input("Enter c: "))
 
-if c < b < 0:
+d = b**2 - 4 * a * c
+
+if d < 0:
+    print()
+else:
+    x_1 = (-b + d**0.5) / 2 * a
+    x_2 = (-b - d**0.5) / 2 * a
+
+    if x_2 == x_1:
+        print(x_1)
+    else:
+        print(x_1, x_2)

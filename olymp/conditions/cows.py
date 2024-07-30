@@ -15,20 +15,14 @@
 # 1
 # выходные данные
 # 1 korova
+
 n = int(input("Enter n: "))
 
-if n in [2, 3, 4]:
-    print(n, "коровы")
-
-elif 4 < n < 21:
-    print(n, "коров")
-
-elif (n != 11) and (n % 10 == 1):
+if n != 11 and n % 10 == 1:
     print(n, "корова")
 
-elif (n > 21) and ((n % 10 == 2) or (n % 10 == 4 )or (n % 10 == 3)):
-    print(n, "коровы")
-
-else:
+elif 4 < n < 21 or n % 10 in [5, 6, 7, 8, 9]:
     print(n, "коров")
 
+else:
+    print(n, "коровы")
