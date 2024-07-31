@@ -27,3 +27,14 @@
 # 3
 # выходные данные
 # 3 bochki
+
+n = int(input("Enter n: "))
+
+if n != 11 and n % 10 == 1:
+    print(n, "бочка")
+
+elif 4 < n < 21 or n % 10 in [5, 6, 7, 8, 9]:
+    print(n, "бочек")
+
+else:
+    print(n, "бочки")
