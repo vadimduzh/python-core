@@ -14,3 +14,16 @@
 # 4
 # Выходные данные
 # 16
+n = int(input("Enter n: "))
+
+# 1 способ
+# res = 2 * 2 * 2 * 2 * 2 * 2
+res = 1
+for i in range(1, n + 1):
+    res = res * 2
+
+print(res)
+
+# 2 способ
+res = 2**n
+print(res)
