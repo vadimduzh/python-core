@@ -20,5 +20,8 @@
 # 55
 n = int(input("Enter n: "))
 
-res = n * 5
+res = 0
+for i in range(1, n + 1):
+    res = n * 5
+
 print(res)
