@@ -18,3 +18,7 @@
 # 11
 # Выходные данные
 # 55
+n = int(input("Enter n: "))
+
+res = n * 5
+print(res)
