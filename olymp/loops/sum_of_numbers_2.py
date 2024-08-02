@@ -20,3 +20,11 @@
 # 5
 # Выходные данные
 # 14
+n = int(input("Enter n: "))
+k = int(input("Enter k: "))
+res = 1
+
+for i in range(1, n + 1):
+    res = (k + 2) * n
+
+print(res)
