@@ -21,3 +21,18 @@
 # 1
 # Выходные данные
 # 2
+n = int(input("Enter n: "))
+k = int(input("Enter k: "))
+
+
+def factorial(num):
+    res = 1
+    for i in range(1, num + 1):
+        res = res * i
+    return res
+
+
+# C=n!/(k!(n−k)!)
+total = factorial(n) / (factorial(k) * factorial(n - k))
+
+print(total)
