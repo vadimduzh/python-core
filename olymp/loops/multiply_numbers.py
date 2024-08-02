@@ -18,4 +18,11 @@
 # 10
 # Выходные данные
 # 30
+n = int(input("Enter n: "))
+
+res = 1
+for i in range(1, n + 1):
+    res = n * 3
+
+print(res)
 
