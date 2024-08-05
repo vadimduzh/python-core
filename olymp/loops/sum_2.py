@@ -13,3 +13,7 @@
 # 1
 # выходные данные
 # 2.66667
+n = int(input("Enter n: "))
+
+res = 0
+for i in range(1, n + 1):
