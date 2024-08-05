@@ -15,3 +15,11 @@
 # 2
 # выходные данные
 # 7
+n = int(input("Enter n: "))
+a = int(input("Enter a: "))
+
+res = 1
+for i in range(1, n + 1):
+    res += a**i
+
+print(res)
