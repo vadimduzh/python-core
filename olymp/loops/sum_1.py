@@ -13,3 +13,10 @@
 # 2
 # выходные данные
 # 1.25
+n = int(input("Enter n: "))
+
+res = 0
+for i in range(1, n + 1):
+    res = res + 1/(i**2)
+
+print(res)
