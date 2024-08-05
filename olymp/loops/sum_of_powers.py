@@ -11,3 +11,10 @@
 # 4
 # выходные данные
 # 31
+n = int(input("Enter n: "))
+
+res = 1
+for i in range(1, n + 1):
+    res = res + 2**i
+
+print(res)
