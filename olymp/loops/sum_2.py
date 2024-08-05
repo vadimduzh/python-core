@@ -16,4 +16,8 @@
 n = int(input("Enter n: "))
 
 res = 0
-for i in range(1, n + 1):
+for i in range(0, n + 1):
+    res = res + ((-1)**i / (2 * i + 1))
+res *= 4
+
+print(res)

@@ -17,9 +17,11 @@
 # 4
 a = int(input("Enter a: "))
 n = int(input("Enter n: "))
+
+# res = a * a * a * a
 res = 1
 
 for i in range(1, n + 1):
-    res = a**n
+    res = res * a
 
 print(res)

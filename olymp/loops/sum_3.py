@@ -20,6 +20,6 @@ n = int(input("Enter n: "))
 
 res = 1
 for i in range(1, n + 1):
-    res = res + 1/math. factorial(i)
+    res = res + 1/math.factorial(i)
 
 print(res)
