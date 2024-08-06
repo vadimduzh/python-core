@@ -15,3 +15,9 @@
 # 8
 # выходные данные
 # 4
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+
+for i in range(a, b + 1):
+    if i**2 <= b:
+        print(i**2)
