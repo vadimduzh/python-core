@@ -21,5 +21,4 @@ b = int(input("Enter b: "))
 for i in range(a, b + 1):
     if i**2 <= b:
         print(i**2)
-    elif i**0.5 <= b:
-        print(i)
+
