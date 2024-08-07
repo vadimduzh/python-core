@@ -18,5 +18,11 @@
 # 6
 # Выходные данные
 # 1 2 3
+x = int(input("Enter x: "))
+
+for i in range(1, x + 1):
+    if x % i == 0:
+        print(i)
+
 
 
