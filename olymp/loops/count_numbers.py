@@ -32,3 +32,22 @@
 # 0
 # Выходные данные
 # 5 2 3
+N = int(input("Enter the count of nums: "))
+
+num_list = []
+for i in range(0, N):
+    n = int(input("Enter: "))
+    num_list.append(n)
+
+zero = 0
+positive_num = 0
+negative_num = 0
+for i in num_list:
+    if i == 0:
+        zero += 1
+    elif i > 0:
+        positive_num += 1
+    else:
+        negative_num += 1
+
+print(zero, positive_num, negative_num)
