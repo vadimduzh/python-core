@@ -21,3 +21,18 @@
 # 28
 # Выходные данные
 # NO
+N = int(input("Enter the count of nums: "))
+
+num_list = []
+for i in range(0, N):
+    n = int(input("Enter: "))
+    num_list.append(n)
+
+res = None
+for i in num_list:
+    if i == 0:
+        res = "YES"
+    else:
+        res = "NO"
+
+print(res)
