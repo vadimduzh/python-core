@@ -34,3 +34,16 @@
 # 3
 # Выходные данные
 # 0
+N = int(input("Enter the count of nums: "))
+
+num_list = []
+for i in range(0, N):
+    n = int(input("Enter: "))
+    num_list.append(n)
+
+total = 0
+for i in num_list:
+    if i == 0:
+        total += 1
+
+print(total)
