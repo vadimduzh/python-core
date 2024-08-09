@@ -16,3 +16,11 @@
 # 0
 # Выходные данные
 # 0 2 3
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+c = int(input("Enter c: "))
+d = int(input("Enter d: "))
+
+for x in range(0, 1000 + 1):
+    if a * x ** 3 + b * x ** 2 + c * x + d == 0:
+        print(x)
