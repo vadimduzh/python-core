@@ -17,3 +17,13 @@
 # 5
 # Выходные данные
 # 0
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+c = int(input("Enter c: "))
+d = int(input("Enter d: "))
+e = int(input("Enter e: "))
+
+for x in range(0, 1000 + 1):
+    if x - e != 0:
+        if (a * x ** 3 + b * x ** 2 + c * x + d) / (x - e) == 0:
+            print(x)
