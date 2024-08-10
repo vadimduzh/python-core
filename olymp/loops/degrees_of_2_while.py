@@ -17,3 +17,13 @@
 # 50
 # выходные данные
 # 1 2 4 8 16 32
+N = int(input("Enter N: "))
+
+total = 0
+res = 0
+while 2 ** res < N:
+    total = 2 ** res
+    print(total)
+    res = res + 1
+
+
