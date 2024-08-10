@@ -26,3 +26,11 @@
 # 5
 # выходные данные
 # NO
+N = int(input("Enter n: "))
+
+while True:
+    if 2 ** 2 == N:
+        print("YES")
+    else:
+        print("NO")
+    break
