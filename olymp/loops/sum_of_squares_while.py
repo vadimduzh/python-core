@@ -14,3 +14,13 @@
 # 2
 # Выходные данные
 # 5
+n = int(input("Enter n: "))
+
+k = 1
+res = 0
+
+while k <= n:
+    res += k ** 2
+    k += 1
+
+print(res)

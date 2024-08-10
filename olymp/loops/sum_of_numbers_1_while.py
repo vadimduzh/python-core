@@ -21,3 +21,10 @@
 # 10
 # Выходные данные
 # 20
+n = int(input("Enter n: "))
+k = int(input("Enter k: "))
+
+while True:
+    res = n * k
+    print(res)
+    break

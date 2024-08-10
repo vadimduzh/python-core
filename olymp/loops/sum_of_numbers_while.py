@@ -19,4 +19,8 @@
 # 11
 # Выходные данные
 # 55
-
+n = int(input("Enter n: "))
+while True:
+    res = n * 5
+    print(res)
+    break
