@@ -24,7 +24,10 @@
 n = int(input("Enter n: "))
 k = int(input("Enter k: "))
 
-while True:
-    res = n * k
-    print(res)
-    break
+res = 0
+l = 0
+while l < n:
+    res = res + k
+    l += 1
+
+print(res)
