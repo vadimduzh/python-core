@@ -26,11 +26,38 @@
 # 5
 # выходные данные
 # NO
-N = int(input("Enter n: "))
 
-while True:
-    if 2 ** 2 == N:
-        print("YES")
-    else:
-        print("NO")
-    break
+# import math
+# N = int(input("Enter n: "))
+#
+# i = 0
+# while True:
+#     if
+
+# for i in range(5):
+#     print(i, end="")
+#
+# print("")
+#
+# i = 0
+# while i < 64:
+#     print(i, end="")
+#     i = i + 1
+
+N = int(input("Enter N: "))
+
+answer = "NO"
+
+if N == 0:
+    answer = "YES"
+else:
+    i = 0
+    res = 1
+    while res <= N:
+        res *= 2
+        if res == N:
+            answer = "YES"
+            break
+        i += 1
+
+print(answer)
