@@ -22,7 +22,7 @@ x = int(input("Enter x: "))
 y = int(input("Enter y: "))
 
 day = 1
-while x < y:
+while x <= y:
     x *= 1.1
     day += 1
 
