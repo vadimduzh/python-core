@@ -23,7 +23,7 @@ y = int(input("Enter y: "))
 
 year = 0
 while x <= y:
-    x = x * (1 + p * 0.01)
+    x *= (1 + p * 0.01)
     year += 1
 
 print(year)
