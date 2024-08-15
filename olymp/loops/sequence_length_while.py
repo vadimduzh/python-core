@@ -29,3 +29,12 @@
 # 0
 # Выходные данные
 # 3
+count = 0
+while True:
+    n = int(input('Enter n: '))
+    if n == 0:
+        break
+    else:
+        count += 1
+
+print(count)
