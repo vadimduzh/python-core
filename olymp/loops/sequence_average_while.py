@@ -22,3 +22,16 @@
 # Выходные данные
 # 5.66666666667
 #
+count = 0
+sum = 0
+while True:
+    n = int(input('Enter n: '))
+    if n == 0:
+        break
+    else:
+        count += 1
+        sum += n
+
+res = sum / count
+print(res)
+
