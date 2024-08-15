@@ -23,3 +23,12 @@
 # 0
 # Выходные данные
 # 9
+max_num = 0
+while True:
+    n = int(input('Enter n: '))
+    if n == 0:
+        break
+    elif n > max_num:
+        max_num = n
+
+print(max_num)
