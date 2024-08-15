@@ -19,3 +19,20 @@
 # 10
 # Выходные данные
 # -1
+A = int(input("Enter A: "))
+
+f_1 = 0
+f_2 = 1
+i = 1
+while f_2 < A:
+    f = f_1 + f_2
+    f_1 = f_2
+    f_2 = f
+    i += 1
+
+if A == f_2:
+    print(i)
+elif A < f_2:
+    print(-1)
+
+
