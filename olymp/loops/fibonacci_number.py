@@ -21,18 +21,33 @@
 # -1
 A = int(input("Enter A: "))
 
+# f_1 = 0
+# f_2 = 1
+# i = 1
+# while f_2 < A:
+#     f = f_1 + f_2
+#     f_1 = f_2
+#     f_2 = f
+#     i += 1
+#
+# if A == f_2:
+#     print(i)
+# elif A < f_2:
+#     print(-1)
+
 f_1 = 0
 f_2 = 1
-i = 1
-while f_2 < A:
+i = 2
+while True:
     f = f_1 + f_2
-    f_1 = f_2
-    f_2 = f
-    i += 1
 
-if A == f_2:
-    print(i)
-elif A < f_2:
-    print(-1)
-
-
+    if A == f:
+        print(i)
+        break
+    elif A < f:
+        print(-1)
+        break
+    else:
+        f_1 = f_2
+        f_2 = f
+        i += 1
