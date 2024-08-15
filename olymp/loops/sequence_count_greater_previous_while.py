@@ -22,3 +22,13 @@
 # 0
 # Выходные данные
 # 2
+first_num = 0
+res = -1
+while True:
+    n = int(input('Enter n: '))
+    if n == 0:
+        break
+    else:
+        res += 1
+
+print(res)
