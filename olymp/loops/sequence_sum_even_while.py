@@ -22,3 +22,12 @@
 # 0
 # Выходные данные
 # 2
+count = 0
+while True:
+    n = int(input('Enter n: '))
+    if n == 0:
+        break
+    elif n % 2 == 0:
+        count += 1
+
+print(count)
