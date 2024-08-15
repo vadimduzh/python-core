@@ -28,7 +28,8 @@ while True:
     n = int(input('Enter n: '))
     if n == 0:
         break
-    else:
+    elif n > first_num:
+        first_num = n
         res += 1
 
 print(res)
