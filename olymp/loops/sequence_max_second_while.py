@@ -29,5 +29,17 @@
 # Выходные данные
 # 1
 
+max_1 = -1
+max_2 = -1
+while True:
+    n = int(input('Enter n: '))
+    if n == 0:
+        break
 
+    if n > max_1:
+        max_2 = max_1
+        max_1 = n
+    elif n > max_2:
+        max_2 = n
 
+print(max_2)
