@@ -25,18 +25,18 @@
 # Выходные данные
 # 17
 prev_num = -1
-count = 0
+total = 0
 while True:
     n = int(input('Enter n: '))
     if n == 0:
         if prev_num == 0:
             break
         else:
-            count += n
+            total += n
             prev_num = n
     else:
-        count += n
+        total += n
         prev_num = n
 
-print(count)
+print(total)
 

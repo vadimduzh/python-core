@@ -20,3 +20,15 @@
 # 0
 # Выходные данные
 # 2
+prev_num = -1
+count = 0
+while True:
+    n = int(input('Enter n: '))
+    if n == 0:
+        break
+    else:
+        if n == prev_num:
+            count += 1
+            prev_num = n
+
+print(count)
