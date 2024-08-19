@@ -20,10 +20,10 @@
 # 0
 # Выходные данные
 # 2
-prev_num = -1
-count = 0
+count = -1
 while True:
     n = int(input('Enter n: '))
+    prev_num = n
     if n == 0:
         break
     else:
