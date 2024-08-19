@@ -20,15 +20,20 @@
 # 0
 # Выходные данные
 # 2
-count = -1
+max_count = 0
+count = 0
+prev_num = -1
 while True:
     n = int(input('Enter n: '))
-    prev_num = n
     if n == 0:
         break
-    else:
-        if n == prev_num:
-            count += 1
-            prev_num = n
+    elif n == prev_num:
+        count += 1
+    elif prev_num != n:
+        count = 1
 
-print(count)
+    if count > max_count:
+        max_count = count
+    prev_num = n
+print(max_count)
+
