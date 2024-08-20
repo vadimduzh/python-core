@@ -20,3 +20,13 @@
 # 2 3
 # Выходные данные
 # 2
+n = int(input("Enter n: "))
+m = int(input("Enter m: "))
+
+while True:
+    if n <= m:
+        print(n)
+        break
+    else:
+        print(m)
+        break
