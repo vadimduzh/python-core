@@ -23,10 +23,9 @@
 n = int(input("Enter n: "))
 m = int(input("Enter m: "))
 
-while True:
-    if n <= m:
-        print(n)
-        break
-    else:
-        print(m)
-        break
+if n < m:
+    rem = m % n
+    res = m // n + rem
+    print(res)
+else:
+    print(1)
