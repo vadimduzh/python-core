@@ -24,3 +24,7 @@
 # 3
 # Выходные данные
 # 6
+n = int(input("Enter n: "))
+res = ((n + 1) * n) / 2
+print(res)
+
