@@ -20,3 +20,9 @@
 #
 # Выходные данные
 # It is 3 hours 0 minutes.
+d = int(input("Enter d: "))
+
+hours = d // 30
+minutes = (d % 30) * 2
+
+print(hours, minutes)

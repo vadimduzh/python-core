@@ -23,9 +23,8 @@
 n = int(input("Enter n: "))
 m = int(input("Enter m: "))
 
-if n < m:
-    rem = m % n
-    res = m // n + rem
-    print(res)
+
+if m % n == 0:
+    max_rabbits_in_cell = m // n
 else:
-    print(1)
+    max_rabbits_in_cell = m // n + 1
