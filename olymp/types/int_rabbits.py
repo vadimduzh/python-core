@@ -28,3 +28,5 @@ if m % n == 0:
     max_rabbits_in_cell = m // n
 else:
     max_rabbits_in_cell = m // n + 1
+
+print(max_rabbits_in_cell)
