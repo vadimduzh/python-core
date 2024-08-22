@@ -25,8 +25,8 @@ m = int(input("Enter m: "))
 
 
 if m % n == 0:
-    max_rabbits_in_cell = m // n
+    max_num = m // n
 else:
-    max_rabbits_in_cell = m // n + 1
+    max_num = m // n + 1
 
-print(max_rabbits_in_cell)
+print(max_num)
