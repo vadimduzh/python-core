@@ -23,3 +23,23 @@
 # 1 3 20
 # Выходные данные
 # 50
+time_1 = input("Enter first time: ")
+time_2 = input("Enter second time: ")
+
+time_1 = time_1.split()
+time_2 = time_2.split()
+
+hours_1 = int(time_1[0]) * 3600
+minutes_1 = int(time_1[1]) * 60
+sec_1 = int(time_1[2])
+res_1 = hours_1 + minutes_1 + sec_1
+
+hours_2 = int(time_2[0]) * 3600
+minutes_2 = int(time_2[1]) * 60
+sec_2 = int(time_2[2])
+res_2 = hours_2 + minutes_2 + sec_2
+
+res = res_2 - res_1
+print(res)
+
+
