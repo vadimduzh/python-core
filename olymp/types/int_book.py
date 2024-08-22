@@ -28,3 +28,20 @@
 # 15 43
 # Выходные данные
 # 3 13
+k = int(input("Enter k: "))
+n = int(input("Enter n: "))
+
+# x = n % k
+# res = 1
+# if n < k:
+#     print(n, 1)
+# else:
+#     while k < n:
+#         res += 1
+#         k += k
+#     print(res, x)
+
+p = (n // k) + 1
+l = n % k
+
+print(p, l)
