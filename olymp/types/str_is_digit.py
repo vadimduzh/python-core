@@ -21,4 +21,12 @@
 # 2
 # Выходные данные
 # yes
+c = input("Enter the symbol: ")
+print(c.isdigit())
 
+
+if (int(c) == 0 or int(c) == 1 or int(c) == 2 or int(c) == 3 or int(c) == 4 or int(c) == 5
+        or int(c) == 6 or int(c) == 7 or int(c) == 8 or int(c) == 9):
+    print("yes")
+else:
+    print("no")
