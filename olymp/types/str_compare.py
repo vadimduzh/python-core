@@ -18,3 +18,8 @@
 # a
 # Выходные данные
 # yes
+s_1 = input("Enter the first symbol: ")
+s_2 = input("Enter the second symbol: ")
+
+if s_1 == s_2:
+    print("yes")
