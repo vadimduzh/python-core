@@ -29,11 +29,15 @@ print(res)
 alf_1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 alf_2 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
-index = None
-for i in alf_1:
-    if i == s:
-        index = alf_1.index(i)
+index = -1
+for i in range(len(alf_1)):
+    if alf_1[i] == s:
+        index = i
+        break
 
-res = alf_2[index]
-print(res)
+if index == -1:
+    print(s)
+else:
+    res = alf_2[index]
+    print(res)
 
