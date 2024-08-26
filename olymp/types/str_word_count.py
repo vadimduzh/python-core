@@ -20,4 +20,20 @@
 # In the town where I was born
 # выходные данные
 # 7
+s = input("Enter s: ")
+count = 0
+
+res = s.split()
+for i in res:
+    count += 1
+
+print(count)
+
+count_1 = 1
+for i in s:
+    if i == " ":
+        count_1 += 1
+
+print(count)
+
 
