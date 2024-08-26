@@ -24,26 +24,24 @@
 # выходные данные
 # three
 # 5
-s = input("Enter s: ")
-world_lst = s.split()
+str = input("Enter s: ")
 
+world_lst = str.split()
 max_1 = world_lst[0]
-max_len = len(world_lst[0])
 for i in world_lst:
-    if len(i) > max_len:
-        max_len = len(i)
+    if len(i) > len(max_1):
         max_1 = i
 
-print(max_1, max_len)
+print(max_1, len(max_1))
 
-# list_1 = []
-# count_1 = 0
-# for i in s:
-#     while i != " ":
-#         count_1 += 1
-#         if i == " ":
-#             list_1.append(count_1)
-#             count_1 = 0
-#         break
-#
-# print(list_1)
+max_word = ""
+current_word = ""
+for s in str:
+    if s != " ":
+        current_word += s
+        if len(current_word) > len(max_word):
+            max_word = current_word
+    else:
+        current_word = ""
+
+print(max_word, len(max_word))
