@@ -25,19 +25,25 @@
 # three
 # 5
 s = input("Enter s: ")
-# res = s.split()
+world_lst = s.split()
 
-# max_num = res[0]
-# max_len = len(res[0])
-# for i in res:
-#     if len(i) > max_len:
-#         max_len = len(i)
-#         max_num = i
+max_1 = world_lst[0]
+max_len = len(world_lst[0])
+for i in world_lst:
+    if len(i) > max_len:
+        max_len = len(i)
+        max_1 = i
+
+print(max_1, max_len)
+
+# list_1 = []
+# count_1 = 0
+# for i in s:
+#     while i != " ":
+#         count_1 += 1
+#         if i == " ":
+#             list_1.append(count_1)
+#             count_1 = 0
+#         break
 #
-# print(max_num, max_len)
-
-
-list = []
-for i in s:
-    while i != " ":
-        
+# print(list_1)
