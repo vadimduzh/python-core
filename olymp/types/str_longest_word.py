@@ -24,3 +24,20 @@
 # выходные данные
 # three
 # 5
+s = input("Enter s: ")
+# res = s.split()
+
+# max_num = res[0]
+# max_len = len(res[0])
+# for i in res:
+#     if len(i) > max_len:
+#         max_len = len(i)
+#         max_num = i
+#
+# print(max_num, max_len)
+
+
+list = []
+for i in s:
+    while i != " ":
+        
