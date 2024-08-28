@@ -28,5 +28,22 @@
 # Выходные данные
 # yes
 
+s_1 = input('Enter the word: ')
 
+s_2 = s_1[:: -1]
+if s_2 == s_1:
+    print("Yes")
+else:
+    print("No")
 
+s_3 = s_1
+count = 0
+for i in range(len(s_3)):
+    if s_3[i] == s_3[i * -1 - 1]:
+        count += 1
+    else:
+        print("no")
+        break
+
+if count == len(s_3):
+    print("Yes")
