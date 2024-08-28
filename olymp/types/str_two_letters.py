@@ -24,3 +24,22 @@
 # Выходные данные
 # f
 
+# второй способ
+s = input("Enter the string: ")
+
+
+for c in s:
+    if s.count(c) == 2:
+        print(1, c)
+        break
+
+
+for c in s:
+    count = 0
+    for l in s:
+        if c == l:
+            count += 1
+    if count == 2:
+        print(2, c)
+        break
+
