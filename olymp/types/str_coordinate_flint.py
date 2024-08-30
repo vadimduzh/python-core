@@ -19,3 +19,15 @@
 # South 19
 # выходные данные
 # 0 -19
+s = input("Enter the string: ")
+s = s.split()
+print(s)
+
+if s[0] == "South":
+    print(0, int(s[-1]) * -1)
+elif s[0] == "North":
+    print(0, s[-1])
+elif s[0] == "West":
+    print(0, int(s[-1]) * -1)
+else:
+    print(0, s[-1])
