@@ -22,8 +22,17 @@
 str_1 = input("Enter the first string: ")
 str_2 = input("Enter the second string: ")
 
-if str_2 in str_1:
+if str_1 in str_2:
     print("yes")
 else:
     print("no")
+
+res = "No"
+for i in range(len(str_2)):
+    if str_2[i:i + len(str_1)] == str_1:
+        res = "Yes"
+        break
+
+print(res)
+
 
