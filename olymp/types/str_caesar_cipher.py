@@ -20,3 +20,20 @@
 # 3
 # выходные данные
 # WXYZ
+alf_1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+str_1 = input("Enter the string: ")
+k = int(input("Enter k: "))
+
+new_str = ""
+for i in str_1:
+    for el in alf_1:
+        if i == el:
+            index_1 = alf_1.index(el)
+            if index_1 + k > 26:
+                rem = (index_1 - 3) % 26
+                new_str += (alf_1[rem])
+            else:
+                index_2 = alf_1.index(el) - k
+                new_str += (alf_1[index_2])
+
+print(new_str)
