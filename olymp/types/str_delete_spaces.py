@@ -25,3 +25,29 @@
 #    d  iz  czl l l h udq t
 # выходные данные
 #  d iz czl l l h udq t
+str_1 = input("Enter str: ")
+
+new_str = str_1.split()
+res = " ".join(new_str)
+print(res)
+
+# list_1 = list(str_1)
+# list_2 = list(str_1)
+# prev_symbol = ""
+# for i in range(len(list_2)):
+#     if list_2[i] == " ":
+#         if prev_symbol == " ":
+#             list_1.pop(i)
+#     prev_symbol = list_2[i]
+#
+# res_2 = "".join(list_1)
+# print(res_2)
+
+res_3 = ""
+prev_symbol = ""
+for c in str_1:
+    if c != " " or (c == " " and prev_symbol != " "):
+        res_3 = res_3 + c
+
+    prev_symbol = c
+print(res_3)
