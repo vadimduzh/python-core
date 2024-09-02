@@ -44,3 +44,25 @@
 # 255.00.255.255
 # Выходные данные
 # 0
+input_text = input("Enter IP: ")
+number_list = input_text.split(".")
+
+res = 1
+count = 0
+if len(number_list) == 4:
+    for s in number_list:
+        if s.isdigit():
+            if 225 >= int(s) >= 0:
+                if s[0] == "0" and len(s) == 0:
+                    res = 1
+                else:
+                    res = 0
+            else:
+                res = 0
+        else:
+            res = 0
+            break
+else:
+    res = 0
+
+print(res)
